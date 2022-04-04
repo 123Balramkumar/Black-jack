@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Patti Card Game</title>
+    <link rel="stylesheet" href="card_game.css">
+    <!--using jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="main_container" class="container">
+        <h2>
+            <span id="result">..let's play the game </span>
+        </h2>
+        <div class="row01">
+            <div id="player_box">
+                <h2 id="player">You : <span id="player_result">0</span> </h2>
+            </div>
+            <div id="dealer_box">
+                <h2 id="player">Dealer : <span id="dealer_result">0</span></h2>
+            </div>
+        </div>
+        <div class="row02">
+            <div>
+                <button id="playButton">Play</button>
+                <button id="showButton">Show</button>
+                <button id="restartButton">Restart</button>
+            </div>
+        </div>
+        <div class="row03">
+            <table>
+                <tr>
+                    <th>Wins</th>
+
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draw">0</span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+<script src="card_game.js"></script>
+
+</html>

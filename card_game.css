@@ -1,0 +1,193 @@
+body {
+  font-size: 16px;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  background-image: radial-gradient(
+    rgba(195, 230, 191, 0.993),
+    rgb(139, 221, 160),
+    rgb(76, 204, 87),
+    rgb(40, 216, 24)
+  );
+}
+#result {
+  text-align: center;
+  font-size: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#player_box {
+  font-size: 27px;
+  border-right: 5px solid rgb(16, 18, 92);
+  border-left: 5px solid rgb(37, 18, 80);
+  border-radius: 30px;
+}
+#dealer_box {
+  font-size: 27px;
+  margin-left: 10px;
+  border-left: 5px solid rgb(36, 18, 91);
+  border-right: 5px solid rgb(32, 16, 87);
+  border-radius: 30px;
+}
+.row01 {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.row02,
+.row03 {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.row01,
+.row02 {
+  color: white;
+}
+.row01 div {
+  padding: 10px;
+  height: 500px;
+  flex: 1;
+  text-align: center;
+}
+.card {
+  border: 3px solid black;
+  height: 180px !important;
+  width: 120px !important;
+  margin-right: 4px;
+  border-radius: 15px;
+  text-align: left !important;
+  font-size: 30px;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 4px;
+  box-shadow: 6px 8px rgb(51, 44, 44);
+}
+#suites {
+  font-size: 80px;
+  text-align: center;
+  justify-content: center;
+  color: d;
+}
+#playButton {
+  font-size: 45px;
+  height: 70px;
+  width: 150px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+#showButton {
+  font-size: 45px;
+  height: 70px;
+  width: 150px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+#restartButton {
+  font-size: 45px;
+  height: 70px;
+  width: 170px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+table {
+  height: 60px;
+  width: 600px;
+  padding: 5px;
+  border: 5px solid rgb(37, 23, 70);
+  text-align: center;
+  font-size: 60px;
+}
+td {
+  height: 60px;
+  width: 600px;
+  padding: 5px;
+  border: 5px solid rgb(37, 23, 70);
+  text-align: center;
+  font-size: 50px;
+}
+th {
+  height: 60px;
+  width: 600px;
+  padding: 5px;
+  border: 5px solid rgb(37, 23, 79);
+  text-align: center;
+  font-size: 50px;
+}
+@media (min-width: 800px) and (max-width: 1024px) {
+  #result,
+  #player {
+    font-size: 27px;
+  }
+  .row01 div {
+    height: 400px;
+    padding: 5px;
+  }
+  .card {
+    height: 120px !important;
+    width: 80px !important;
+    font-size: 25px;
+    box-shadow: 4px 6px rgb(51, 44, 44);
+  }
+  #suites {
+    font-size: 40px;
+  }
+  table,
+  th,
+  td {
+    height: 60px;
+    width: 600px;
+  }
+  #hitButton,
+  #standButton,
+  #dealButton {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 800px) {
+  #result,
+  #player {
+    font-size: 17px;
+  }
+  .row01 div {
+    height: 150px;
+    padding: 5px;
+  }
+  .card {
+    height: 50px !important;
+    width: 33px !important;
+    font-size: 10px;
+    box-shadow: 2px 4px rgb(51, 44, 44);
+  }
+  #suites {
+    font-size: 20px;
+  }
+  #hitButton,
+  #standButton,
+  #dealButton {
+    height: 25px;
+    width: 60px;
+    font-size: 10px;
+  }
+  table,
+  th,
+  td {
+    margin-top: -17px;
+    height: 10px;
+    width: 250px;
+    padding: 2px;
+    border: 2px solid rgb(45, 88, 45);
+    text-align: center;
+    font-size: 10px;
+  }
+}
